@@ -28,7 +28,6 @@ public class User extends Object{
 			throw new BadPasswordException("bad new password");
 		}
 		this.password=password;
-		
 	}
 	
 	public Group getGroup() {

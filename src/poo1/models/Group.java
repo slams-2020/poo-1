@@ -16,6 +16,7 @@ public class Group {
 		this.name=name;
 		users=new ArrayList<User>();//Création liste vide
 		this.organization=organization;
+		this.organization.addGroup(this);
 	}	
 	public void addUser(User user) {
 		user.setGroup(this);
